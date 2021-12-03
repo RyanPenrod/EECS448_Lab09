@@ -1,0 +1,246 @@
+.shopTable{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 100px;
+  grid-gap: 5px;
+  font-size: 35px;
+  background: lightgray;
+}
+
+.fivedollars{
+  background: cornflowerblue;
+}
+
+.tendollars{
+  background: plum;
+}
+
+.twentydollars{
+  background: gold;
+}
+
+.chooseFive{
+  font-size: 15px;
+  color: white;
+  background: blue;
+  justify-self: center;
+  align-self: center;
+}
+
+.chooseTen{
+  font-size: 15px;
+  color: white;
+  background: purple;
+  justify-self: center;
+  align-self: center;
+}
+
+.chooseTwenty{
+  font-size: 15px;
+  color: white;
+  background: goldenrod;
+  justify-self: center;
+  align-self: center;
+}
+
+.receiptTable{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-template-areas:
+    "blankCell quantityCell cpiCell subTotalCell"
+    "item1Cell i1qCell i1cpiCell i1subTotalCell"
+    "item2Cell i2qCell i2cpiCell i2subTotalCell"
+    "item3Cell i3qCell i3cpiCell i3subTotalCell"
+    "shippingCell chosenShippingCell chosenShippingCell shippingSubTotalCell"
+    "totalCostCell totalCostCell totalCostCell finalCostCell"
+}
+
+.number1{
+  grid-area: blankCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number2{
+  grid-area: quantityCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number3{
+  grid-area: cpiCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number4{
+  grid-area: subTotalCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number5{
+  grid-area: item1Cell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number6{
+  grid-area: i1qCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number7{
+  grid-area: i1cpiCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number8{
+  grid-area: i1subTotalCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number9{
+  grid-area: item2Cell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number10{
+  grid-area: i2qCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number11{
+  grid-area: i2cpiCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number12{
+  grid-area: i2subTotalCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number13{
+  grid-area: item3Cell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number14{
+  grid-area: i3qCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number15{
+  grid-area: i3cpiCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number16{
+  grid-area: i3subTotalCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number17{
+  grid-area: shippingCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number18{
+  grid-area: chosenShippingCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number19{
+  grid-area: shippingSubTotalCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: thistle;
+  padding: 5px;
+}
+
+.number20{
+  grid-area: totalCostCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.number21{
+  grid-area: finalCostCell;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  background-color: lightgreen;
+  padding: 5px;
+}

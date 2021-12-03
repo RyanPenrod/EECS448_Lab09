@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script type="text/javascript" src="formChecker.js"></script>
+    <link href="style.css"
+      rel="stylesheet"
+      type="text/css">
+  </head>
+  <body>
+    <div style="font-size: 50px;">
+      Web Store
+    </div>
+    <form action="customerBackend.php" id="submissionForm" onsubmit="return validateOnSubmit()" method="post">
+      <div id="userInfo">
+        Username: <input name="usersUser" type="text" placeholder="ex: name@domain.com" id="username"><br>
+        Password: <input name="usersPass" type="text" placeholder="ex: password123!" id="password"><br>
+      </div>
+
+      <div id="shopHeader" style="text-align: center; font-size: 35px;">
+        Available Items<br>
+      </div>
+
+      <div class="shopTable">
+        <div class="fivedollars">Five Dollar Bill<br>(Costs $10)</div>
+        <div class="tendollars">Ten Dollar Bill<br>(Costs $20)</div>
+        <div class="twentydollars">Twenty Dollar Bill<br>(Costs $50)</div>
+        <div class="chooseFive">Enter Quantity<br><input name="usersFive" type="number" value="0" placeholder="Enter Quantity" id="fiveQuantity"></div>
+        <div class="chooseTen">Enter Quantity<br><input name="usersTen" type="number" value="0" placeholder="Enter Quantity" id="tenQuantity"></div>
+        <div class="chooseTwenty">Enter Quantity<br><input name="usersTwenty" type="number" value="0" placeholder="Enter Quantity" id="twentyQuantity"></div>
+      </div>
+
+      <div id="shipping" style="font-size: 35px;">
+        Choose your prefered shipping below:<br>
+        <ul style="font-size: 20px;">
+          <li><input type=radio name="usersShippingOption" value="Seven Day Shipping" id="sevenShip"> Free 7 day shipping</li>
+          <li><input type=radio name="usersShippingOption" value="Three Day Shipping" id="threeShip"> $5.00 3 day shipping</li>
+          <li><input type=radio name="usersShippingOption" value="Over Night Shipping" id="overNightShip"> $50.00 over night shipping</li>
+        </ul>
+      </form>
+
+      <div id="finalize">
+        <button onclick="resetButton()" style="background: lightcoral;">Reset</button>
+        <button type="submit" onclick="validateOnSubmit()" style="background: lightgreen;">Submit</button><br>
+        <div id="errorMessage" style="color: red; font-size: 20px;"></div>
+      </div>
+    </div>
+  </body>
+</html>
